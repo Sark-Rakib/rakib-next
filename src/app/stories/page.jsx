@@ -86,37 +86,39 @@ export default function Stories() {
   ];
 
   return (
-    <main className="max-w-6xl mx-auto px-6 py-12">
-      <title>STORIES RAKIB SARKER</title>
-      <header className="mb-8">
-        <h1 className="text-3xl font-bold">Stories</h1>
-        <p className="text-gray-400 mt-2">
-          Thoughts, case studies and write-ups about frontend engineering.
-        </p>
-      </header>
+    <div className="bg-black text-white">
+      <main className="max-w-6xl mx-auto px-6 py-12">
+        <title>STORIES RAKIB SARKER</title>
+        <header className="mb-8">
+          <h1 className="text-3xl font-bold">Stories</h1>
+          <p className="text-gray-400 mt-2">
+            Thoughts, case studies and write-ups about frontend engineering.
+          </p>
+        </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {story.map((s) => (
-          <article
-            key={s.id}
-            className="p-6 rounded-lg hover:shadow-lg transition-shadow"
-          >
-            <h2 className="text-xl font-semibold mb-2">{s.title}</h2>
-            <p className="text-sm text-gray-400 mb-4">
-              {new Date(s.date).toLocaleDateString()}
-            </p>
-            {/* <p className="text-gray-300 mb-4">{s.content}</p> */}
-            <div className="mt-4">
-              <Link
-                href={`/stories/${s.id}`}
-                className="text-indigo-400 hover:underline"
-              >
-                Read story
-              </Link>
-            </div>
-          </article>
-        ))}
-      </div>
-    </main>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {story.map((s) => (
+            <article
+              key={s.id}
+              className="p-6 rounded-lg hover:shadow-lg transition-shadow"
+            >
+              <h2 className="text-xl font-semibold mb-2">{s.title}</h2>
+              <p className="text-sm text-gray-400 mb-4">
+                {new Date(s.date).toLocaleDateString()}
+              </p>
+              {/* <p className="text-gray-300 mb-4">{s.content}</p> */}
+              <div className="mt-4">
+                <Link
+                  href={`/stories/${s.id}`}
+                  className="text-indigo-400 hover:underline"
+                >
+                  Read story
+                </Link>
+              </div>
+            </article>
+          ))}
+        </div>
+      </main>
+    </div>
   );
 }

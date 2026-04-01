@@ -86,7 +86,7 @@ const StoryDetails = async ({ params }) => {
   }
 
   return (
-    <div>
+    <div className="bg-black text-white min-h-screen">
       <main className="max-w-4xl mx-auto px-6 py-16 text-white">
         <title>STORIES DETAILS RAKIB SARKER</title>
         <h1 className="text-3xl font-bold mb-4">{result.title}</h1>

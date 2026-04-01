@@ -3,11 +3,20 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import heroImg from "../../public/603848285_2118057782275193_7694275342413896210_n.jpg";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Hero({
   title = "HELLO, I'M RAKIB SARKER",
   subtitle = "I build minimal, accessible web experiences.",
 }) {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   // 🔥 Parent container (stagger)
   const container = {
     hidden: {},
@@ -29,9 +38,8 @@ export default function Hero({
   };
 
   return (
-    <section className="flex items-center text-white py-10">
+    <section className="flex items-center text-white py-40">
       <title>RAKIB SARKER</title>
-
       <div className="max-w-6xl mx-auto px-6 w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* 🔥 Left Content */}
@@ -50,10 +58,7 @@ export default function Hero({
               {title}
             </motion.h1>
 
-            <motion.p
-              className="mt-4 text-lg text-gray-200 max-w-lg"
-              variants={fadeUp}
-            >
+            <motion.p className="mt-4 text-lg max-w-lg" variants={fadeUp}>
               {subtitle}
             </motion.p>
 
