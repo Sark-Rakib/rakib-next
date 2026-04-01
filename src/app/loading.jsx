@@ -7,7 +7,7 @@ export default function loading() {
 
         {/* Text */}
         <p className="text-gray-300 text-sm tracking-widest">
-          Loading your experience...
+          Loading your experience..
         </p>
       </div>
     </div>
