@@ -1,0 +1,9 @@
+import Hero from "@/Component/Hero";
+
+export default function Home() {
+  return (
+    <div className="mt-40">
+      <Hero />
+    </div>
+  );
+}
