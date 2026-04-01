@@ -38,6 +38,7 @@ export default function Header() {
           {/* DESKTOP MENU */}
           <nav className="hidden md:flex items-center gap-2">
             {navItems.map((item) => {
+              const Icon = item.icon;
               const active =
                 item.href === "/"
                   ? pathname === "/"
@@ -53,7 +54,7 @@ export default function Header() {
                       : "text-gray-300 hover:text-white hover:bg-white/10"
                   }`}
                 >
-                  {item.icon}
+                  {Icon}
                   {item.label}
                 </Link>
               );
@@ -78,6 +79,7 @@ export default function Header() {
         >
           <div className="flex flex-col gap-2">
             {navItems.map((item) => {
+              const Icon = item.icon;
               const active = pathname === item.href;
 
               return (
@@ -91,7 +93,7 @@ export default function Header() {
                       : "text-gray-300 hover:bg-white/10"
                   }`}
                 >
-                  {item.icon}
+                  {Icon}
                   {item.label}
                 </Link>
               );
