@@ -80,7 +80,10 @@ export default function Hero({
                 <Link href="/about/contact">Contact</Link>
               </motion.div>
             </motion.div>
-            <div className="flex items-center gap-4 text-gray-300 text-xl mt-5">
+            <motion.div
+              className="flex items-center gap-4 text-gray-300 text-xl mt-5"
+              variants={fadeUp}
+            >
               {/* Email */}
               <a
                 href="mailto:mdrakibsarkar1@gmail.com"
@@ -116,7 +119,7 @@ export default function Hero({
               >
                 <FaWhatsapp />
               </a>
-            </div>
+            </motion.div>
           </motion.div>
 
           {/* 🔥 Right Image */}

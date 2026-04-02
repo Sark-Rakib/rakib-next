@@ -48,7 +48,7 @@ export default function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`px-3 py-2 flex items-center gap-2 rounded-md text-sm font-medium transition ${
+                  className={`px-3 py-2 flex items-center gap-2 rounded-md text-sm font-medium transition duration-300 ${
                     active
                       ? "bg-white text-black"
                       : "text-gray-300 hover:text-white hover:bg-white/10"
