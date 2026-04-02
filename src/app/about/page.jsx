@@ -46,7 +46,7 @@ export default function AboutPage() {
               <h2 className="text-xl font-semibold mb-3">Bio</h2>
               <p className="text-gray-300">
                 I specialize in building interactive user interfaces using
-                React, Next.js and WebGL. My focus is on performance,
+                React, Next.js and TailwindCSS. My focus is on performance,
                 accessibility and thoughtful UX. Recently I have been exploring
                 3D components and transition driven experiences in the browser.
               </p>

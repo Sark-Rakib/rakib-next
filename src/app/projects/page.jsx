@@ -23,6 +23,8 @@ const projects = [
       "EmailJS",
     ],
     liveURL: "https://lunorr.netlify.app",
+    GithubClient: "https://github.com/Sark-Rakib/lunor-client",
+    GithubServer: "https://github.com/Sark-Rakib/lunor-server",
   },
   {
     id: 2,
@@ -40,6 +42,8 @@ const projects = [
       "EmailJS",
     ],
     liveURL: "https://harirshad.netlify.app",
+    GithubClient: "https://github.com/Sark-Rakib/dessert-shop-client",
+    GithubServer: "https://github.com/Sark-Rakib/dessert-shop-server",
   },
   {
     id: 3,
@@ -49,6 +53,7 @@ const projects = [
       "A modern news web application built with React and Tailwind CSS, featuring Firebase authentication for secure user access. Includes dynamic news categories, protected routes, and smooth animations using AOS. Designed with a responsive layout to ensure a seamless reading experience across all devices.",
     tags: ["React", "AOS", "Tailwind", "Firebase"],
     liveURL: "https://dragonsnews.netlify.app",
+    GithubClient: "https://github.com/Sark-Rakib/The-Dragon-News",
   },
   {
     id: 4,
@@ -66,6 +71,8 @@ const projects = [
       "Nodemailer",
     ],
     liveURL: "https://mk-sports.vercel.app",
+    GithubClient: "https://github.com/Sark-Rakib/mk-sports",
+    GithubServer: "https://github.com/Sark-Rakib/mk-sports-server",
   },
 ];
 
@@ -110,14 +117,40 @@ export default function ProjectsPage() {
                 </div>
 
                 {/* 🔥 BUTTON ALWAYS BOTTOM */}
-                <Link
-                  href={p.liveURL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-auto text-indigo-400 hover:underline text-sm"
-                >
-                  Live Preview →
-                </Link>
+                <div className="mt-auto flex items-center justify-between">
+                  <div>
+                    <Link
+                      href={p.liveURL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-indigo-400 hover:underline text-sm"
+                    >
+                      Live Preview →
+                    </Link>
+                  </div>
+                  <div className="flex flex-row gap-5">
+                    {p.GithubClient && (
+                      <Link
+                        href={p.GithubClient}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-indigo-400 hover:underline text-sm"
+                      >
+                        Client Code →
+                      </Link>
+                    )}
+                    {p.GithubServer && (
+                      <Link
+                        href={p.GithubServer}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-indigo-400 hover:underline text-sm"
+                      >
+                        Server Code →
+                      </Link>
+                    )}
+                  </div>
+                </div>
               </div>
             </article>
           ))}

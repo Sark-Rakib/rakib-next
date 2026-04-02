@@ -4,6 +4,7 @@ import Image from "next/image";
 import heroImg from "../../public/603848285_2118057782275193_7694275342413896210_n.jpg";
 import Link from "next/link";
 import { useEffect } from "react";
+import { FaEnvelope, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 export default function Hero({
   title = "HELLO, I'M RAKIB SARKER",
@@ -79,6 +80,43 @@ export default function Hero({
                 <Link href="/about/contact">Contact</Link>
               </motion.div>
             </motion.div>
+            <div className="flex items-center gap-4 text-gray-300 text-xl mt-5">
+              {/* Email */}
+              <a
+                href="mailto:mdrakibsarkar1@gmail.com"
+                target="_blank"
+                className="hover:text-white transition"
+              >
+                <FaEnvelope />
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/rakib-sarker-"
+                target="_blank"
+                className="hover:text-white transition"
+              >
+                <FaLinkedin />
+              </a>
+
+              {/* GitHub (X er jaygay usually GitHub use kore dev ra 😏) */}
+              <a
+                href="https://github.com/Sark-Rakib"
+                target="_blank"
+                className="hover:text-white transition"
+              >
+                <FaGithub />
+              </a>
+
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/8801745762857"
+                target="_blank"
+                className="hover:text-white transition"
+              >
+                <FaWhatsapp />
+              </a>
+            </div>
           </motion.div>
 
           {/* 🔥 Right Image */}

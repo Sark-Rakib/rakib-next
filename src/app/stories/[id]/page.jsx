@@ -7,7 +7,7 @@ const StoryDetails = async ({ params }) => {
     {
       id: 1,
       title: "My Journey into Web Development",
-      date: "2024-01-10",
+      date: "2025-06-10",
       content: `
       <p>I started my journey as a curious learner who wanted to build websites.</p>
       <p>At first, HTML and CSS felt simple, but JavaScript opened a whole new world.</p>
@@ -17,7 +17,7 @@ const StoryDetails = async ({ params }) => {
     {
       id: 2,
       title: "Building My First Portfolio",
-      date: "2024-02-05",
+      date: "2025-07-15",
       content: `
       <p>Creating my first portfolio was both exciting and challenging.</p>
       <p>I focused on clean UI, responsiveness, and performance.</p>
@@ -26,18 +26,8 @@ const StoryDetails = async ({ params }) => {
     },
     {
       id: 3,
-      title: "Learning React the Smart Way",
-      date: "2024-03-12",
-      content: `
-      <p>React made development more structured and scalable.</p>
-      <p>Understanding components, props, and state was key.</p>
-      <p>Then I moved into hooks and advanced patterns.</p>
-    `,
-    },
-    {
-      id: 4,
       title: "Why I Love Tailwind CSS",
-      date: "2024-04-01",
+      date: "2025-07-28",
       content: `
       <p>Tailwind CSS changed how I write styles.</p>
       <p>No more switching between files — everything is in one place.</p>
@@ -45,9 +35,20 @@ const StoryDetails = async ({ params }) => {
     `,
     },
     {
+      id: 4,
+      title: "Learning React the Smart Way",
+      date: "2025-08-12",
+      content: `
+      <p>React made development more structured and scalable.</p>
+      <p>Understanding components, props, and state was key.</p>
+      <p>Then I moved into hooks and advanced patterns.</p>
+    `,
+    },
+
+    {
       id: 5,
       title: "My First Freelance Project",
-      date: "2024-05-20",
+      date: "2025-09-20",
       content: `
       <p>Getting my first client was a big milestone.</p>
       <p>I built a responsive website with modern UI.</p>
@@ -56,11 +57,32 @@ const StoryDetails = async ({ params }) => {
     },
     {
       id: 6,
-      title: "Exploring 3D in Web (Three.js)",
-      date: "2024-06-15",
+      title: "Exploring 3D in Web Development",
+      date: "2025-10-15",
       content: `
-      <p>Three.js opened up new possibilities for interactive web experiences.</p>
-      <p>I experimented with 3D models, animations, and shaders.</p>
+      <p>3D web development felt like magic.</p>
+      <p>I started using React Three Fiber and Drei.</p>
+      <p>Now I create interactive 3D experiences.</p>
+    `,
+    },
+    {
+      id: 7,
+      title: "From Frontend to Mern Stack",
+      date: "2025-11-10",
+      content: `
+      <p>I started learning backend with Node.js and Express.</p>
+      <p>Connected MongoDB for real-world applications.</p>
+      <p>Now I can build complete Mern-stack apps.</p>
+    `,
+    },
+    {
+      id: 8,
+      title: "Deploying Projects with Vercel",
+      date: "2025-11-13",
+      content: `
+      <p>Deployment is just as important as development.</p>
+      <p>Vercel made it super easy for Next.js apps.</p>
+      <p>Now I deploy projects in minutes.</p>
     `,
     },
   ];

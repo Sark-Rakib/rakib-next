@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { FaEnvelope, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
 
 export default function ContactPage() {
   const [name, setName] = useState("");
@@ -39,78 +40,111 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="max-w-4xl mx-auto px-6 py-12">
-      <h1 className="text-3xl font-bold mb-4">Contact</h1>
-      <p className="text-gray-400 mb-6">
-        Have a project or question? Send a message and I’ll get back to you.
-      </p>
+    <div className="bg-black text-white min-h-screen">
+      <main className="max-w-4xl mx-auto px-6 py-12">
+        <h1 className="text-3xl font-bold mb-4">Contact</h1>
+        <p className="text-gray-400 mb-6">
+          Have a project or question? Send a message and I’ll get back to you.
+        </p>
 
-      {sent ? (
-        <div className="mb-6 p-4 rounded-md bg-green-50 text-green-800">
-          Message sent — thank you!
-        </div>
-      ) : null}
+        {sent ? (
+          <div className="mb-6 p-4 rounded-md bg-green-50 text-green-800">
+            Message sent — thank you!
+          </div>
+        ) : null}
 
-      {error ? (
-        <div className="mb-6 p-3 rounded-md bg-red-50 text-red-800">
-          {error}
-        </div>
-      ) : null}
+        {error ? (
+          <div className="mb-6 p-3 rounded-md bg-red-50 text-red-800">
+            {error}
+          </div>
+        ) : null}
 
-      <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4">
-        <label className="block">
-          <span className="text-sm text-gray-200">Name</span>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="mt-1 block w-full p-2 rounded-md border-gray-200 shadow-sm bg-white/5 focus:ring-2 focus:ring-indigo-400"
-            placeholder="Your name"
-            required
-          />
-        </label>
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-4">
+          <label className="block">
+            <span className="text-sm text-gray-200">Name</span>
+            <input
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="mt-1 block w-full p-2 rounded-md border-gray-200 shadow-sm bg-white/5 focus:ring-2 focus:ring-indigo-400"
+              placeholder="Your name"
+              required
+            />
+          </label>
 
-        <label className="block">
-          <span className="text-sm text-gray-200">Email</span>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="mt-1 block w-full p-2 rounded-md border-gray-200 shadow-sm bg-white/5 focus:ring-2 focus:ring-indigo-400"
-            placeholder="you@example.com"
-            required
-          />
-        </label>
+          <label className="block">
+            <span className="text-sm text-gray-200">Email</span>
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="mt-1 block w-full p-2 rounded-md border-gray-200 shadow-sm bg-white/5 focus:ring-2 focus:ring-indigo-400"
+              placeholder="you@example.com"
+              required
+            />
+          </label>
 
-        <label className="block">
-          <span className="text-sm text-gray-200">Message</span>
-          <textarea
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            rows={6}
-            className="mt-1 block w-full p-2 rounded-md border-gray-200 shadow-sm bg-white/5 focus:ring-2 focus:ring-indigo-400"
-            placeholder="Tell me about anything..."
-            required
-          />
-        </label>
+          <label className="block">
+            <span className="text-sm text-gray-200">Message</span>
+            <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              rows={6}
+              className="mt-1 block w-full p-2 rounded-md border-gray-200 shadow-sm bg-white/5 focus:ring-2 focus:ring-indigo-400"
+              placeholder="Tell me about anything..."
+              required
+            />
+          </label>
 
-        <div className="flex items-center gap-4">
-          <button
-            type="submit"
-            disabled={busy}
-            className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 disabled:opacity-60"
-          >
-            {busy ? "Sending..." : "Send message"}
-          </button>
+          <div className="flex items-center gap-10">
+            <button
+              type="submit"
+              disabled={busy}
+              className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 disabled:opacity-60"
+            >
+              {busy ? "Sending..." : "Send message"}
+            </button>
 
-          <a
-            href="mailto:mdrakibsarkar1@gmail.com"
-            className="text-sm text-gray-300"
-          >
-            Or email: mdrakibsarkar1@gmail.com
-          </a>
-        </div>
-      </form>
-    </main>
+            <div className="flex items-center gap-4 text-gray-300 text-xl">
+              {/* Email */}
+              <a
+                href="mailto:mdrakibsarkar1@gmail.com"
+                target="_blank"
+                className="hover:text-white transition"
+              >
+                <FaEnvelope />
+              </a>
+
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/rakib-sarker-"
+                target="_blank"
+                className="hover:text-white transition"
+              >
+                <FaLinkedin />
+              </a>
+
+              {/* GitHub (X er jaygay usually GitHub use kore dev ra 😏) */}
+              <a
+                href="https://github.com/Sark-Rakib"
+                target="_blank"
+                className="hover:text-white transition"
+              >
+                <FaGithub />
+              </a>
+
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/8801745762857"
+                target="_blank"
+                className="hover:text-white transition"
+              >
+                <FaWhatsapp />
+              </a>
+            </div>
+          </div>
+        </form>
+      </main>
+    </div>
   );
 }
