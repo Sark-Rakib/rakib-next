@@ -18,6 +18,8 @@ export default function Hero({
       document.body.style.overflow = "auto";
     };
   }, []);
+  const resume =
+    "https://drive.google.com/file/d/1HuEzyqkEJ6_z3bpMQWwhkJrEQB4liyba/view?usp=sharing";
 
   // 🔥 Parent container (stagger)
   const container = {
@@ -88,7 +90,9 @@ export default function Hero({
                   whileTap={{ scale: 0.95 }}
                   className="border border-white px-5 py-2 rounded-md font-medium hover:bg-white hover:text-gray-900 transition"
                 >
-                  <Link href="/about/contact">Contact</Link>
+                  <Link href={resume} target="_blank">
+                    Resume
+                  </Link>
                 </motion.div>
               </motion.div>
               <motion.div
