@@ -43,7 +43,7 @@ Currently learning and working with the MERN stack to become a Full Stack Develo
 
 ## 📸 Screenshots
 
-![Portfolio Screenshot](./public/Screenshot%20from%202026-04-02%2003-04-20.png)
+![Portfolio Screenshot](./public/Screenshot%20from%202026-04-06%2000-23-22.png)
 
 ---
 
