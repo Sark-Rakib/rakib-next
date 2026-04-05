@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
-import { FaEnvelope, FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { IoMailOutline } from "react-icons/io5";
+import { PiLinkedinLogo } from "react-icons/pi";
 
 export default function Hero({
   title = "HELLO, I'M RAKIB SARKER",
@@ -99,7 +101,7 @@ export default function Hero({
                   target="_blank"
                   className="hover:text-white transition"
                 >
-                  <FaEnvelope />
+                  <IoMailOutline />
                 </a>
 
                 {/* LinkedIn */}
@@ -108,7 +110,7 @@ export default function Hero({
                   target="_blank"
                   className="hover:text-white transition"
                 >
-                  <FaLinkedin />
+                  <PiLinkedinLogo />
                 </a>
 
                 {/* GitHub (X er jaygay usually GitHub use kore dev ra 😏) */}
