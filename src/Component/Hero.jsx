@@ -100,40 +100,40 @@ export default function Hero({
                 variants={fadeUp}
               >
                 {/* Email */}
-                <a
+                <Link
                   href="mailto:mdrakibsarkar1@gmail.com"
                   target="_blank"
                   className="hover:text-white transition"
                 >
                   <IoMailOutline />
-                </a>
+                </Link>
 
                 {/* LinkedIn */}
-                <a
+                <Link
                   href="https://www.linkedin.com/in/rakib-sarker-"
                   target="_blank"
                   className="hover:text-white transition"
                 >
                   <PiLinkedinLogo />
-                </a>
+                </Link>
 
                 {/* GitHub (X er jaygay usually GitHub use kore dev ra 😏) */}
-                <a
+                <Link
                   href="https://github.com/Sark-Rakib"
                   target="_blank"
                   className="hover:text-white transition"
                 >
                   <FaGithub />
-                </a>
+                </Link>
 
                 {/* WhatsApp */}
-                <a
+                <Link
                   href="https://wa.me/8801745762857"
                   target="_blank"
                   className="hover:text-white transition"
                 >
                   <FaWhatsapp />
-                </a>
+                </Link>
               </motion.div>
             </motion.div>
 
