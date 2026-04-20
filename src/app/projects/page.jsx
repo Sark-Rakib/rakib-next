@@ -3,12 +3,25 @@ import Image1 from "../../../public/Screenshot from 2026-04-02 03-15-16.png";
 import Image2 from "../../../public/Screenshot from 2026-04-02 03-04-20.png";
 import Image3 from "../../../public/Screenshot from 2026-04-02 03-30-49.png";
 import Image4 from "../../../public/Screenshot from 2026-04-02 05-07-42.png";
+import Image5 from "../../../public/Screenshot from 2026-04-20 15-54-11.png";
 import Image from "next/image";
 import Link from "next/link";
 
 const projects = [
   {
     id: 1,
+    image: Image5,
+    title: "Chatify - Real-time Messaging App",
+    description:
+      "Finally built my own real-time messaging web app — Chatify. It's a messenger-style application where users can -> Send & receive messages instantly, Share images Secure authentication, Real-time updates without refreshing",
+
+    tags: ["React", "Next.js", "Tailwind", "Supabase", "PostgreSQL"],
+    liveURL: "https://chatify-bd.vercel.app",
+    GithubClient: "https://github.com/Sark-Rakib/messenger-app",
+    GithubServer: "https://github.com/Sark-Rakib/messenger-app",
+  },
+  {
+    id: 2,
     image: Image1,
     title: "Lunor Brand Shop",
     description:
@@ -27,7 +40,7 @@ const projects = [
     GithubServer: "https://github.com/Sark-Rakib/lunor-server",
   },
   {
-    id: 2,
+    id: 3,
     image: Image2,
     title: "E-commerce Dashboard",
     description:
@@ -46,7 +59,7 @@ const projects = [
     GithubServer: "https://github.com/Sark-Rakib/dessert-shop-server",
   },
   {
-    id: 3,
+    id: 4,
     image: Image3,
     title: "Dragon News",
     description:
@@ -56,7 +69,7 @@ const projects = [
     GithubClient: "https://github.com/Sark-Rakib/The-Dragon-News",
   },
   {
-    id: 4,
+    id: 5,
     image: Image4,
     title: "Mk Sports",
     description:
