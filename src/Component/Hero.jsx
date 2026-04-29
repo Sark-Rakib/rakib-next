@@ -58,11 +58,8 @@ export default function Hero({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             {/* 🔥 Left Content */}
             <motion.div variants={container} initial="hidden" animate="show">
-              <motion.p
-                className="text-sm font-medium text-green-300 mb-3"
-                variants={fadeUp}
-              >
-                🚀 Frontend developer
+              <motion.p className="text-sm font-medium mb-3" variants={fadeUp}>
+                FRONTEND DEVELOPER
               </motion.p>
 
               <motion.h1
