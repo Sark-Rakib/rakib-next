@@ -14,7 +14,7 @@ export default function ProjectCard({ project, index }) {
     >
       <div className="relative h-48 bg-card border-b border-border overflow-hidden">
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-5xl opacity-1 font-bold tracking-tighter select-none">
+          <span className="text-5xl font-bold tracking-tighter select-none">
             {/* {String(project.id).padStart(2, "0")} */}
             <Image src={project.image} alt="helo" width={500} height={500} />
           </span>
