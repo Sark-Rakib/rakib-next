@@ -16,7 +16,7 @@ export const metadata = {
   title: "Rakib Sarker | Frontend Developer",
   description: "Crafting pixel-perfect, performant web experiences",
   icons: {
-    icon: [{ url: "/favicon.png", type: "image/svg+xml" }],
+    icon: [{ url: "/favicon.png", type: "image/png" }],
   },
 };
 

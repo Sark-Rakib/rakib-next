@@ -12,7 +12,7 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/rakib-sarker-",
     twitter: "https://x.com/Cap_tain01",
   },
-  avatar: "/public/IMG_20260510_022238.png",
+  avatar: "/IMG_20260510_022238.png",
 };
 
 import ProjectOne from "../assets/Screenshot from 2026-07-24 00-18-26.png";
