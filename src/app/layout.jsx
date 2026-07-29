@@ -1,28 +1,34 @@
-import { Geist, Geist_Mono } from "next/font/google"
-import "./globals.css"
-import ClientLayout from "@/components/layout/ClientLayout"
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+import ClientLayout from "@/components/layout/ClientLayout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-})
+});
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
-})
+});
 
 export const metadata = {
   title: "Rakib Sarker | Frontend Developer",
   description: "Crafting pixel-perfect, performant web experiences",
-}
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/svg+xml" }],
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
-  )
+  );
 }

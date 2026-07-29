@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { skillCategories } from "@/data/portfolio"
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { skillCategories } from "@/data/portfolio";
 
 function SkillBar({ name, level, icon, index }) {
   return (
@@ -28,11 +28,15 @@ function SkillBar({ name, level, icon, index }) {
           initial={{ width: 0 }}
           whileInView={{ width: `${level}%` }}
           viewport={{ once: true }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.2 + index * 0.05 }}
+          transition={{
+            duration: 1,
+            ease: "easeOut",
+            delay: 0.2 + index * 0.05,
+          }}
         />
       </div>
     </motion.div>
-  )
+  );
 }
 
 export default function Skills() {
@@ -45,8 +49,12 @@ export default function Skills() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-xs tracking-[0.3em] uppercase text-muted mb-3">Expertise</p>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Skills</h1>
+          <p className="text-xs tracking-[0.3em] uppercase text-muted mb-3">
+            Expertise
+          </p>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+            Skills
+          </h1>
           <p className="text-muted text-sm mt-4 max-w-md mx-auto">
             Technologies and tools I use to bring ideas to life.
           </p>
@@ -89,12 +97,22 @@ export default function Skills() {
             className="inline-flex items-center gap-2 text-sm border-b border-[var(--link-color)] hover:border-[var(--link-hover)] pb-1 transition-colors"
           >
             See my experience
-            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <svg
+              className="w-3 h-3"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </Link>
         </motion.div>
       </div>
     </main>
-  )
+  );
 }
