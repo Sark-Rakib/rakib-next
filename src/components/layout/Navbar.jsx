@@ -5,14 +5,22 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTheme } from "@/components/providers/ThemeProvider";
+import {
+  IoHomeOutline,
+  IoPersonOutline,
+  IoFolderOpenOutline,
+  IoCodeSlashOutline,
+  IoBriefcaseOutline,
+  IoMailOutline,
+} from "react-icons/io5";
 
 const links = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
-  { label: "Projects", href: "/projects" },
-  { label: "Skills", href: "/skills" },
-  { label: "Experience", href: "/experience" },
-  { label: "Contact", href: "/contact" },
+  { label: "Home", href: "/", icon: <IoHomeOutline /> },
+  { label: "About", href: "/about", icon: <IoPersonOutline /> },
+  { label: "Projects", href: "/projects", icon: <IoFolderOpenOutline /> },
+  { label: "Skills", href: "/skills", icon: <IoCodeSlashOutline /> },
+  { label: "Experience", href: "/experience", icon: <IoBriefcaseOutline /> },
+  { label: "Contact", href: "/contact", icon: <IoMailOutline /> },
 ];
 
 const menuVariants = {
@@ -105,12 +113,13 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`relative px-4 py-2 text-sm rounded-full transition-colors ${
+                  className={`flex items-center gap-1 relative px-4 py-2 text-sm rounded-full transition-colors ${
                     isActive
                       ? "text-[var(--nav-text-hover)]"
                       : "text-[var(--nav-text)] hover:text-[var(--nav-text-hover)]"
                   }`}
                 >
+                  <span className="text-base text-[1px]">{link.icon}</span>
                   {link.label}
                   {isActive && (
                     <motion.span
@@ -259,15 +268,16 @@ export default function Navbar() {
                         variants={linkVariants}
                         initial="hidden"
                         animate="visible"
-                        className={`block relative py-4 text-xl sm:text-2xl tracking-tight transition-colors border-b border-border/50 ${
+                        className={` block relative py-4 sm:text-xl tracking-tight transition-colors border-b border-border/50 ${
                           isActive
                             ? "text-[var(--mobile-link-active)]"
                             : "text-[var(--mobile-link)] hover:text-[var(--mobile-link-hover)]"
                         }`}
                       >
-                        <span className="flex items-center gap-4">
-                          <span className="text-xs font-mono text-muted w-5">
+                        <span className="flex items-center gap-5">
+                          <span className="flex items-center gap-1 text-sm font-mono text-muted w-5">
                             {String(i + 1).padStart(2, "0")}
+                            <span className="text-sm">{link.icon}</span>
                           </span>
                           {link.label}
                         </span>
