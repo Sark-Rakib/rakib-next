@@ -119,7 +119,7 @@ export default function Navbar() {
                       : "text-[var(--nav-text)] hover:text-[var(--nav-text-hover)]"
                   }`}
                 >
-                  <span className="text-base text-[1px]">{link.icon}</span>
+                  <span className="text-base">{link.icon}</span>
                   {link.label}
                   {isActive && (
                     <motion.span
