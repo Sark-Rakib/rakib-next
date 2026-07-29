@@ -12,19 +12,24 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/rakib-sarker-",
     twitter: "https://x.com/Cap_tain01",
   },
-  avatar: "/profile.jpg",
+  avatar: "/public/IMG_20260510_022238.png",
 };
 
+import ProjectOne from "../assets/Screenshot from 2026-07-24 00-18-26.png";
+import ProjectTwo from "../assets/Screenshot from 2026-07-23 23-53-38.png";
+import ProjectThree from "../assets/Screenshot from 2026-07-24 00-39-13.png";
+import ProjectFour from "../assets/Screenshot from 2026-07-27 22-01-16.png";
+
 export const stats = [
-  { label: "Projects Delivered", value: 20 },
-  { label: "Years Experience", value: 3 },
-  { label: "Happy Clients", value: 15 },
-  { label: "Technologies", value: 10 },
+  { label: "Projects", value: 12 },
+  { label: "Years Experience", value: 1 },
+  // { label: "Happy Clients", value: 15 },
+  { label: "Technologies", value: 13 },
 ];
 
 export const aboutText = {
   intro:
-    "I'm a Frontend Developer based in Bangalore with 3+ years of experience building modern, performant web applications. I specialize in React, Next.js, and TypeScript.",
+    "Hi, I'm Rakib Sarker — a Frontend Developer specializing in React.js, Next.js, JavaScript(ES6+), Tailwind CSS, and building fast, responsive, and modern web applications.",
   detail:
     "I focus on writing clean, maintainable code and creating intuitive user interfaces. I enjoy collaborating with designers and backend engineers to deliver products that make a real impact. When I'm not coding, I explore new technologies and contribute to open-source projects.",
 };
@@ -70,107 +75,150 @@ export const skillCategories = [
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Lunor Official E-Commerce Platform",
     description:
-      "Full-featured online store with real-time cart, Stripe payments, and an admin dashboard for managing products and orders.",
-    image: "/projects/ecommerce.jpg",
-    tags: ["Next.js", "Stripe", "Tailwind", "Prisma"],
-    live: "https://example.com",
-    github: "https://github.com/rakibsarker/ecommerce",
-    highlights: [
-      "Real-time inventory management",
-      "Stripe payment integration",
-      "Role-based admin panel",
+      "Lunor is a responsive e-commerce platform that allows users to browse products, filter categories, and place orders through a modern and user-friendly interface. Built with React.js, Node.js, Express.js, MongoDB, and Firebase to deliver a scalable and seamless shopping experience",
+    image: ProjectOne,
+    tags: [
+      "React.js",
+      "JavaScript(ES6+)",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDb",
+      "FireBase Auth",
     ],
+    live: "https://lunorr.netlify.app/",
+    githubClient: "https://github.com/Sark-Rakib/lunor-client",
+    githubServer: "https://github.com/Sark-Rakib/lunor-server",
+    highlights: ["Easy payment system", "Role-based admin panel"],
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Mk Sports E-Commerce Jersey Shop",
     description:
-      "Collaborative task manager with drag-and-drop boards, real-time updates, and team workspaces.",
-    image: "/projects/taskapp.jpg",
-    tags: ["React", "TypeScript", "Node.js", "WebSocket"],
-    live: "https://example.com",
-    github: "https://github.com/rakibsarker/taskapp",
-    highlights: [
-      "Drag-and-drop Kanban boards",
-      "Real-time collaboration",
-      "Team workspaces",
+      "MK Sports is a modern jersey eCommerce website where users can explore and purchase football, cricket, basketball, and national team jerseys. It features a clean, responsive design with product details, a shopping cart, secure authentication, and a smooth ordering experience across all devices.",
+    image: ProjectTwo,
+    tags: [
+      "React",
+      "JavaScript(ES6+)",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDb",
+      "FireBase Auth",
     ],
+    live: "https://mk-sports.vercel.app",
+    githubClient: "https://github.com/Sark-Rakib/mk-sports",
+    githubServer: "https://github.com/rakibsarker/ecommerce",
+    highlights: ["Smooth User Experience", "Real-time Data"],
   },
   {
     id: 3,
-    title: "Weather Dashboard",
+    title: "Blood Connect Platform",
     description:
-      "Real-time weather application with 7-day forecasts, location detection, and interactive charts.",
-    image: "/projects/weather.jpg",
-    tags: ["Next.js", "OpenWeather API", "Chart.js"],
-    live: "https://example.com",
-    github: "https://github.com/rakibsarker/weather",
+      "BloodConnect is a blood donation platform that connects blood donors with people in need. Users can search donors by blood group and location, register as donors, and quickly contact available donors through a simple, responsive, and user-friendly interface.",
+    image: ProjectThree,
+    tags: [
+      "Next.js",
+      "JavaScript(ES6+)",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDb",
+      "Next Auth",
+    ],
+    live: "https://blood-donation-dmya.vercel.app",
+    githubClient: "https://github.com/Sark-Rakib/blood-donation",
+    // githubServer: "https://github.com/rakibsarker/ecommerce",
     highlights: [
-      "Geolocation-based weather",
-      "7-day forecast charts",
-      "Responsive design",
+      "Search donors by blood group",
+      "One-click call to donors",
+      "Donor registration system",
     ],
   },
   {
     id: 4,
-    title: "Portfolio Generator",
+    title: "Googly Fashion",
     description:
-      "CLI tool that generates customizable portfolio websites from a JSON configuration file.",
-    image: "/projects/portfolio-gen.jpg",
-    tags: ["Node.js", "CLI", "Handlebars"],
-    live: "https://example.com",
-    github: "https://github.com/rakibsarker/portfolio-gen",
+      "Googly Fashion is a modern fashion eCommerce platform where users can browse trendy clothing, filter products by price, color, and size, add items to their cart, track orders, and enjoy a smooth, responsive shopping experience across all devices.",
+    image: ProjectFour,
+    tags: [
+      "React",
+      "JavaScript(ES6+)",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDb",
+      "FireBase Auth",
+    ],
+    live: "https://googly-fashionn.vercel.app",
+    githubClient: "https://github.com/Sark-Rakib/googly-fashion",
+    // githubServer: "https://github.com/rakibsarker/ecommerce",
     highlights: [
-      "JSON-driven generation",
-      "Multiple theme support",
-      "Zero-config setup",
+      "Price, color & size filtering",
+      "Easy add to cart",
+      "Real-time order tracking",
+      "Secure order placement",
     ],
   },
 ];
 
 export const experiences = [
+  // {
+  //   id: 1,
+  //   role: "Senior Frontend Developer",
+  //   company: "TechCorp",
+  //   period: "2023 - Present",
+  //   location: "Bangalore",
+  //   description:
+  //     "Leading frontend architecture for multiple high-traffic client projects. Established coding standards, code review processes, and mentored a team of 3 junior developers.",
+  //   achievements: [
+  //     "Improved Core Web Vitals by 40% across all projects",
+  //     "Built a reusable component library adopted by 3 teams",
+  //     "Reduced build times by 60% through webpack optimization",
+  //   ],
+  // },
+  // {
+  //   id: 2,
+  //   role: "Frontend Developer",
+  //   company: "WebAgency",
+  //   period: "2021 - 2023",
+  //   location: "Bangalore",
+  //   description:
+  //     "Built responsive web applications using React and Next.js. Collaborated closely with designers to implement pixel-perfect, accessible UIs.",
+  //   achievements: [
+  //     "Delivered 15+ client projects on time and within budget",
+  //     "Implemented CI/CD pipelines reducing deployment time by 70%",
+  //     "Achieved 95+ Lighthouse scores across all projects",
+  //   ],
+  // },
+  // {
+  //   id: 3,
+  //   role: "Junior Frontend Developer",
+  //   company: "StartupXYZ",
+  //   period: "2020 - 2021",
+  //   location: "Remote",
+  //   description:
+  //     "Developed and maintained client websites. Learned modern frontend workflows, best practices, and agile development methodologies.",
+  //   achievements: [
+  //     "Converted legacy jQuery codebase to React",
+  //     "Improved page load speed by 50% with lazy loading",
+  //     "Introduced modern CSS practices (Grid, Flexbox)",
+  //   ],
+  // },
   {
     id: 1,
-    role: "Senior Frontend Developer",
-    company: "TechCorp",
-    period: "2023 - Present",
-    location: "Bangalore",
-    description:
-      "Leading frontend architecture for multiple high-traffic client projects. Established coding standards, code review processes, and mentored a team of 3 junior developers.",
-    achievements: [
-      "Improved Core Web Vitals by 40% across all projects",
-      "Built a reusable component library adopted by 3 teams",
-      "Reduced build times by 60% through webpack optimization",
-    ],
-  },
-  {
-    id: 2,
     role: "Frontend Developer",
-    company: "WebAgency",
-    period: "2021 - 2023",
-    location: "Bangalore",
+    company: "Personal Projects",
+    period: "2024 - Present",
+    location: "Bangladesh",
     description:
-      "Built responsive web applications using React and Next.js. Collaborated closely with designers to implement pixel-perfect, accessible UIs.",
+      "Built modern, responsive web applications using React.js, Next.js, TypeScript, and Tailwind CSS. Focused on performance, accessibility, and creating intuitive user experiences through real-world projects.",
     achievements: [
-      "Delivered 15+ client projects on time and within budget",
-      "Implemented CI/CD pipelines reducing deployment time by 70%",
-      "Achieved 95+ Lighthouse scores across all projects",
-    ],
-  },
-  {
-    id: 3,
-    role: "Junior Frontend Developer",
-    company: "StartupXYZ",
-    period: "2020 - 2021",
-    location: "Remote",
-    description:
-      "Developed and maintained client websites. Learned modern frontend workflows, best practices, and agile development methodologies.",
-    achievements: [
-      "Converted legacy jQuery codebase to React",
-      "Improved page load speed by 50% with lazy loading",
-      "Introduced modern CSS practices (Grid, Flexbox)",
+      "Developed multiple responsive web applications with React.js and Next.js",
+      "Implemented authentication, REST APIs, and reusable UI components",
+      "Optimized application performance and responsive layouts across devices",
     ],
   },
 ];

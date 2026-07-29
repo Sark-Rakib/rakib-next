@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Link from "next/link"
-import ProjectCard from "@/components/ui/ProjectCard"
-import { projects } from "@/data/portfolio"
+import { motion } from "framer-motion";
+import Link from "next/link";
+import ProjectCard from "@/components/ui/ProjectCard";
+import { projects } from "@/data/portfolio";
 
 export default function Projects() {
   return (
@@ -15,8 +15,12 @@ export default function Projects() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-xs tracking-[0.3em] uppercase text-muted mb-3">Portfolio</p>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Projects</h1>
+          <p className="text-xs tracking-[0.3em] uppercase text-muted mb-3">
+            Portfolio
+          </p>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+            Projects
+          </h1>
           <p className="text-muted text-sm mt-4 max-w-md mx-auto">
             A selection of projects I have built and contributed to.
           </p>
@@ -39,12 +43,22 @@ export default function Projects() {
             className="inline-flex items-center gap-2 text-sm border-b border-[var(--link-color)] hover:border-[var(--link-hover)] pb-1 transition-colors"
           >
             Have a project in mind?
-            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <svg
+              className="w-3 h-3"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </Link>
         </motion.div>
       </div>
     </main>
-  )
+  );
 }

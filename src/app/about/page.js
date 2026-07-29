@@ -1,8 +1,14 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import Link from "next/link"
-import { personalInfo, aboutText, stats, skillCategories } from "@/data/portfolio"
+import { motion } from "framer-motion";
+import Link from "next/link";
+import {
+  personalInfo,
+  aboutText,
+  stats,
+  skillCategories,
+} from "@/data/portfolio";
+import Image from "next/image";
 
 function StatCard({ stat, index }) {
   return (
@@ -14,13 +20,15 @@ function StatCard({ stat, index }) {
       transition={{ delay: index * 0.1, duration: 0.5 }}
     >
       <div className="text-3xl md:text-4xl font-bold mb-1">{stat.value}+</div>
-      <div className="text-xs text-muted tracking-wider uppercase">{stat.label}</div>
+      <div className="text-xs text-muted tracking-wider uppercase">
+        {stat.label}
+      </div>
     </motion.div>
-  )
+  );
 }
 
 export default function About() {
-  const allSkills = skillCategories.flatMap((c) => c.skills).slice(0, 6)
+  const allSkills = skillCategories.flatMap((c) => c.skills).slice(0, 6);
 
   return (
     <main className="relative min-h-screen px-6 pt-32 pb-20">
@@ -31,8 +39,12 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-xs tracking-[0.3em] uppercase text-muted mb-3">About</p>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Who I Am</h1>
+          <p className="text-xs tracking-[0.3em] uppercase text-muted mb-3">
+            About
+          </p>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+            Who I Am
+          </h1>
         </motion.div>
 
         <div className="grid md:grid-cols-5 gap-12 mb-16 items-start">
@@ -55,8 +67,18 @@ export default function About() {
                 download
                 className="inline-flex items-center gap-2 px-6 py-3 border border-[var(--btn-secondary-border)] rounded-full text-sm text-[var(--btn-secondary-text)] hover:bg-[var(--btn-primary-bg)] hover:text-[var(--btn-primary-text)] transition-all"
               >
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
                 </svg>
                 Download Resume
               </a>
@@ -71,12 +93,22 @@ export default function About() {
           >
             <div className="aspect-square rounded-2xl border border-border overflow-hidden bg-card flex items-center justify-center">
               <div className="text-center p-6">
-                <div className="w-20 h-20 mx-auto rounded-full border border-border flex items-center justify-center mb-4">
-                  <span className="text-2xl font-bold">RS</span>
+                <div className="w-30 h-30 mx-auto rounded-full border border-border flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold">
+                    <Image
+                      src="/IMG_20260510_022238.png"
+                      alt="Profile"
+                      width={500}
+                      height={500}
+                      className="rounded"
+                    />
+                  </span>
                 </div>
                 <h3 className="font-bold text-lg">{personalInfo.name}</h3>
                 <p className="text-muted text-sm">{personalInfo.role}</p>
-                <p className="text-muted text-xs mt-2">{personalInfo.location}</p>
+                <p className="text-muted text-xs mt-2">
+                  {personalInfo.location}
+                </p>
               </div>
             </div>
           </motion.div>
@@ -100,7 +132,9 @@ export default function About() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
-          <p className="text-xs tracking-[0.3em] uppercase text-muted mb-6 text-center">Technologies</p>
+          <p className="text-xs tracking-[0.3em] uppercase text-muted mb-6 text-center">
+            Technologies
+          </p>
           <div className="flex flex-wrap justify-center gap-3">
             {allSkills.map((skill) => (
               <motion.span
@@ -128,12 +162,22 @@ export default function About() {
             className="inline-flex items-center gap-2 text-sm border-b border-[var(--link-color)] hover:border-[var(--link-hover)] pb-1 transition-colors"
           >
             See my work
-            <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            <svg
+              className="w-3 h-3"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
             </svg>
           </Link>
         </motion.div>
       </div>
     </main>
-  )
+  );
 }
