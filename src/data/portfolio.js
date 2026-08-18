@@ -19,6 +19,8 @@ import ProjectOne from "../assets/Screenshot from 2026-07-24 00-18-26.png";
 import ProjectTwo from "../assets/Screenshot from 2026-07-23 23-53-38.png";
 import ProjectThree from "../assets/Screenshot from 2026-07-24 00-39-13.png";
 import ProjectFour from "../assets/Screenshot from 2026-07-27 22-01-16.png";
+import ProjectFive from "../assets/Screenshot from 2026-08-18 20-36-53.png";
+import ProjectSix from "../assets/Screenshot from 2026-08-18 20-34-47.png";
 
 export const stats = [
   { label: "Projects", value: 12 },
@@ -75,6 +77,59 @@ export const skillCategories = [
 export const projects = [
   {
     id: 1,
+    title: "Harir-Shad Dessert E-Commerce Platform",
+    description:
+      "Harir Shad is a modern and user-friendly dessert e-commerce platform built with Next.js, designed to make discovering and ordering delicious desserts simple and enjoyable. The website features a beautiful, responsive UI with Light Mode and Dark Mode, allowing users to browse dessert items comfortably across devices. Customers can easily search for products, explore product details through Quick View, add their favorite items to a Wishlist, manage their Shopping Cart, and place orders smoothly",
+    image: ProjectFive,
+    tags: [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDb",
+      "NextAuth",
+    ],
+    live: "https://harir-shad.vercel.app",
+    githubClient: "https://github.com/Sark-Rakib/harir-shad",
+    highlights: [
+      "Advanced product search",
+      "Quick view & wishlist",
+      "Easy payment system",
+      "Role-based admin panel",
+    ],
+  },
+
+  {
+    id: 2,
+    title: "Remote Recruit — Job Recruitment Platform",
+    description:
+      "Remote Recruit is a modern job recruitment platform designed to connect job posters and job seekers in a simple and efficient way. The platform allows companies or recruiters to register as Job Posters and publish job opportunities, while users can register as Job Finders to explore and find suitable remote jobs. The platform also includes an Admin Panel where administrators can monitor and manage users, job postings, and overall platform activities.",
+    image: ProjectSix,
+    tags: [
+      "React.js",
+      "JavaScript(ES6+)",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDb",
+      "FireBase Auth",
+    ],
+    live: "https://remote-recruitt.vercel.app",
+    githubClient: "https://github.com/Sark-Rakib/remote-recruit",
+    highlights: [
+      "Easy job posting system",
+      "Job seeker registration & job search",
+      "Job poster registration & management",
+      "Role-based authentication",
+      "Admin panel & platform management",
+      "Job post management",
+      "User & job monitoring",
+    ],
+  },
+  {
+    id: 3,
     title: "Lunor Official E-Commerce Platform",
     description:
       "Lunor is a responsive e-commerce platform that allows users to browse products, filter categories, and place orders through a modern and user-friendly interface. Built with React.js, Node.js, Express.js, MongoDB, and Firebase to deliver a scalable and seamless shopping experience",
@@ -92,50 +147,6 @@ export const projects = [
     githubClient: "https://github.com/Sark-Rakib/lunor-client",
     githubServer: "https://github.com/Sark-Rakib/lunor-server",
     highlights: ["Easy payment system", "Role-based admin panel"],
-  },
-  {
-    id: 2,
-    title: "Mk Sports E-Commerce Jersey Shop",
-    description:
-      "MK Sports is a modern jersey eCommerce website where users can explore and purchase football, cricket, basketball, and national team jerseys. It features a clean, responsive design with product details, a shopping cart, secure authentication, and a smooth ordering experience across all devices.",
-    image: ProjectTwo,
-    tags: [
-      "React",
-      "JavaScript(ES6+)",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDb",
-      "FireBase Auth",
-    ],
-    live: "https://mk-sports.vercel.app",
-    githubClient: "https://github.com/Sark-Rakib/mk-sports",
-    githubServer: "https://github.com/rakibsarker/ecommerce",
-    highlights: ["Smooth User Experience", "Real-time Data"],
-  },
-  {
-    id: 3,
-    title: "Blood Connect Platform",
-    description:
-      "BloodConnect is a blood donation platform that connects blood donors with people in need. Users can search donors by blood group and location, register as donors, and quickly contact available donors through a simple, responsive, and user-friendly interface.",
-    image: ProjectThree,
-    tags: [
-      "Next.js",
-      "JavaScript(ES6+)",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDb",
-      "Next Auth",
-    ],
-    live: "https://blood-donation-dmya.vercel.app",
-    githubClient: "https://github.com/Sark-Rakib/blood-donation",
-    // githubServer: "https://github.com/rakibsarker/ecommerce",
-    highlights: [
-      "Search donors by blood group",
-      "One-click call to donors",
-      "Donor registration system",
-    ],
   },
   {
     id: 4,
@@ -161,6 +172,51 @@ export const projects = [
       "Real-time order tracking",
       "Secure order placement",
     ],
+  },
+  {
+    id: 5,
+    title: "Blood Connect Platform",
+    description:
+      "BloodConnect is a blood donation platform that connects blood donors with people in need. Users can search donors by blood group and location, register as donors, and quickly contact available donors through a simple, responsive, and user-friendly interface.",
+    image: ProjectThree,
+    tags: [
+      "Next.js",
+      "JavaScript(ES6+)",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDb",
+      "Next Auth",
+    ],
+    live: "https://blood-donation-dmya.vercel.app",
+    githubClient: "https://github.com/Sark-Rakib/blood-donation",
+    // githubServer: "https://github.com/rakibsarker/ecommerce",
+    highlights: [
+      "Search donors by blood group",
+      "One-click call to donors",
+      "Donor registration system",
+    ],
+  },
+
+  {
+    id: 6,
+    title: "Mk Sports E-Commerce Jersey Shop",
+    description:
+      "MK Sports is a modern jersey eCommerce website where users can explore and purchase football, cricket, basketball, and national team jerseys. It features a clean, responsive design with product details, a shopping cart, secure authentication, and a smooth ordering experience across all devices.",
+    image: ProjectTwo,
+    tags: [
+      "React",
+      "JavaScript(ES6+)",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDb",
+      "FireBase Auth",
+    ],
+    live: "https://mk-sports.vercel.app",
+    githubClient: "https://github.com/Sark-Rakib/mk-sports",
+    githubServer: "https://github.com/rakibsarker/ecommerce",
+    highlights: ["Smooth User Experience", "Real-time Data"],
   },
 ];
 

@@ -93,7 +93,7 @@ export default function Navbar() {
         animate={{ y: 0 }}
         transition={animateIn ? { duration: 0.6 } : { duration: 0 }}
       >
-        <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-6 h-16  flex items-center justify-between">
           <Link
             href="/"
             className="text-lg font-bold tracking-tight uppercase text-[var(--brand-color)]"
@@ -106,7 +106,7 @@ export default function Navbar() {
             </motion.span>
           </Link>
 
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex border rounded-full px-2 py-1 items-center gap-1">
             {links.map((link) => {
               const isActive = pathname === link.href;
               return (
