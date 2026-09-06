@@ -21,6 +21,8 @@ import ProjectThree from "../assets/Screenshot from 2026-07-24 00-39-13.png";
 import ProjectFour from "../assets/Screenshot from 2026-07-27 22-01-16.png";
 import ProjectFive from "../assets/Screenshot from 2026-08-18 20-36-53.png";
 import ProjectSix from "../assets/Screenshot from 2026-08-18 20-34-47.png";
+import ProjectSeven from "../assets/Screenshot from 2026-09-07 00-56-01.png";
+import ProjectEight from "../assets/Screenshot from 2026-09-07 00-56-38.png";
 
 export const stats = [
   { label: "Projects", value: 12 },
@@ -77,6 +79,69 @@ export const skillCategories = [
 export const projects = [
   {
     id: 1,
+    title: "Lunor Official E-Commerce Platform",
+    description:
+      "Lunor is a responsive e-commerce platform that allows users to browse products, filter categories, and place orders through a modern and user-friendly interface. Built with React.js, Node.js, Express.js, MongoDB, and Firebase to deliver a scalable and seamless shopping experience",
+    image: ProjectOne,
+    tags: [
+      "React.js",
+      "JavaScript(ES6+)",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDb",
+      "FireBase Auth",
+    ],
+    live: "https://lunorr.netlify.app/",
+    githubClient: "https://github.com/Sark-Rakib/lunor-client",
+    githubServer: "https://github.com/Sark-Rakib/lunor-server",
+    highlights: [
+      "Easy payment system",
+      "Role-based admin panel",
+      "Product search and filtering",
+      "Secure user authentication",
+      "Responsive fashion-focused UI",
+      "Order management system",
+      "Product details",
+    ],
+  },
+
+  {
+    id: 2,
+    title: "Sherpur Local Services Marketplace",
+
+    description:
+      "Sherpur Local Services is a modern and user-friendly local service marketplace built with Next.js, designed to help people easily find trusted service providers in Sherpur. Users can search for services such as electricians, plumbers, AC and refrigerator technicians, mechanics, tutors, computer technicians, and many more. The platform allows customers to explore provider profiles, check ratings and reviews, find verified providers, and send service requests easily. Service providers can create their profiles, showcase their services, manage customer requests, and connect with potential customers.",
+
+    image: ProjectSeven,
+
+    tags: [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "MongoDB",
+      "Mongoose",
+      "REST API",
+      "Role-Based Auth",
+    ],
+
+    live: "https://help-hub-bd.vercel.app",
+
+    githubClient: "https://github.com/Sark-Rakib/help_hub_bd",
+
+    highlights: [
+      "Location-based service search",
+      "Verified provider profiles",
+      "Service request system",
+      "Ratings & reviews",
+      "User & provider dashboards",
+      "Role-based admin panel",
+    ],
+  },
+
+  {
+    id: 3,
     title: "Harir-Shad Dessert E-Commerce Platform",
     description:
       "Harir Shad is a modern and user-friendly dessert e-commerce platform built with Next.js, designed to make discovering and ordering delicious desserts simple and enjoyable. The website features a beautiful, responsive UI with Light Mode and Dark Mode, allowing users to browse dessert items comfortably across devices. Customers can easily search for products, explore product details through Quick View, add their favorite items to a Wishlist, manage their Shopping Cart, and place orders smoothly",
@@ -102,7 +167,31 @@ export const projects = [
   },
 
   {
-    id: 2,
+    id: 4,
+    title: "DevConnect — Developer Collaboration Platform",
+    description:
+      "DevConnect is a modern platform built to connect developers and streamline project collaboration. Developers can create projects, find teammates, send join requests, communicate through real-time chat, and showcase their portfolios — all in one place. The platform also includes a community feed for sharing posts and engaging with other developers, along with an AI-powered assistant to help with project suggestions and collaboration.",
+
+    image: ProjectEight,
+
+    tags: ["Next.js 16", "React 19", "Supabase", "Tailwind CSS", "Gemini AI"],
+
+    live: "YOUR_LIVE_LINK",
+
+    githubClient: "YOUR_GITHUB_LINK",
+
+    highlights: [
+      "Real-time project chat & messaging",
+      "Project join request system",
+      "Community feed with posts & comments",
+      "AI-powered project suggestions",
+      "Admin & moderator dashboard",
+      "Developer portfolio showcase",
+    ],
+  },
+
+  {
+    id: 5,
     title: "Remote Recruit — Job Recruitment Platform",
     description:
       "Remote Recruit is a modern job recruitment platform designed to connect job posters and job seekers in a simple and efficient way. The platform allows companies or recruiters to register as Job Posters and publish job opportunities, while users can register as Job Finders to explore and find suitable remote jobs. The platform also includes an Admin Panel where administrators can monitor and manage users, job postings, and overall platform activities.",
@@ -128,28 +217,9 @@ export const projects = [
       "User & job monitoring",
     ],
   },
+
   {
-    id: 3,
-    title: "Lunor Official E-Commerce Platform",
-    description:
-      "Lunor is a responsive e-commerce platform that allows users to browse products, filter categories, and place orders through a modern and user-friendly interface. Built with React.js, Node.js, Express.js, MongoDB, and Firebase to deliver a scalable and seamless shopping experience",
-    image: ProjectOne,
-    tags: [
-      "React.js",
-      "JavaScript(ES6+)",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDb",
-      "FireBase Auth",
-    ],
-    live: "https://lunorr.netlify.app/",
-    githubClient: "https://github.com/Sark-Rakib/lunor-client",
-    githubServer: "https://github.com/Sark-Rakib/lunor-server",
-    highlights: ["Easy payment system", "Role-based admin panel"],
-  },
-  {
-    id: 4,
+    id: 6,
     title: "Googly Fashion",
     description:
       "Googly Fashion is a modern fashion eCommerce platform where users can browse trendy clothing, filter products by price, color, and size, add items to their cart, track orders, and enjoy a smooth, responsive shopping experience across all devices.",
@@ -174,7 +244,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     title: "Blood Connect Platform",
     description:
       "BloodConnect is a blood donation platform that connects blood donors with people in need. Users can search donors by blood group and location, register as donors, and quickly contact available donors through a simple, responsive, and user-friendly interface.",
@@ -199,7 +269,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 8,
     title: "Mk Sports E-Commerce Jersey Shop",
     description:
       "MK Sports is a modern jersey eCommerce website where users can explore and purchase football, cricket, basketball, and national team jerseys. It features a clean, responsive design with product details, a shopping cart, secure authentication, and a smooth ordering experience across all devices.",
